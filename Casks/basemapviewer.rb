@@ -9,12 +9,7 @@ cask "basemapviewer" do
 
   livecheck do
     url "https://jizoh.jp/pages/download.html"
-    regex(/基盤地図ビューアV?\d+ (\d+(?:\.\d+)*)/i)
-    strategy :page_match do |page, regex|
-      page.scan(regex).map do |match|
-        match[0]
-      end
-    end
+    regex(/基盤地図ビューアV?\d+\s*(\d+(?:\.\d+)*)/i)
   end
 
   depends_on macos: ">= :sierra"
