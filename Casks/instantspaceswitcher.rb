@@ -1,8 +1,8 @@
 cask "instantspaceswitcher" do
-  version :latest
-  sha256 :no_check
+  version "1.0"
+  sha256 "1d6ce054df0d5eea734d20afca81556818280e3f68d54e4f011ae4d69ae8aa9c"
 
-  url "https://github.com/jurplel/InstantSpaceSwitcher/releases/download/nightly/InstantSpaceSwitcher-1.0.dmg"
+  url "https://github.com/jurplel/InstantSpaceSwitcher/releases/download/v#{version}/InstantSpaceSwitcher-#{version}.dmg"
   name "InstantSpaceSwitcher"
   desc "Native space switching with no animation"
   homepage "https://github.com/jurplel/InstantSpaceSwitcher"
